@@ -41,7 +41,7 @@ class App extends Component {
                 <SelectLanguage updateLanguage={this.updateLanguage}
                                 selectedLanguage={this.state.selectedLanguage} />
                 {!this.state.repos
-                    ? <p>LOADING</p>
+                    ? <p>LOADING...</p>
                     : <ReposGrid repos={this.state.repos.items} />}
             </div>
         )
